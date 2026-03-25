@@ -45,6 +45,7 @@ let newArray = arr.map(item => item > number ? item : null).filter((item) => ite
  console.log(newArray)
 
  //3.Basic Custom Function with Callback
+ //eg 1
  function processData(data, callback){
     console.log("processing--", data);
     callback(data);
@@ -56,5 +57,20 @@ function printData(data){
 }
 
 processData("ankit", printData);
+
+//eg 2
+function multiply(a, b){
+    b(a);
+}
+
+multiply(10, function(num){
+    console.log(num * 2);
+})
+
+multiply(20, (num) => {
+    console.log(num * 2)
+})
+
+
 
 
