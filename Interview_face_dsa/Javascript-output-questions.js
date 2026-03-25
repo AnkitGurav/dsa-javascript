@@ -44,4 +44,17 @@ console.log(filterArray)
 let newArray = arr.map(item => item > number ? item : null).filter((item) => item !== null);
  console.log(newArray)
 
+ //3.Basic Custom Function with Callback
+ function processData(data, callback){
+    console.log("processing--", data);
+    callback(data);
+}
+
+//callback function 
+function printData(data){
+    console.log("Results---", data)
+}
+
+processData("ankit", printData);
+
 
