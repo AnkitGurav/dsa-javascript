@@ -71,6 +71,30 @@ multiply(20, (num) => {
     console.log(num * 2)
 })
 
+//interview 01/04/2026
+console.log('1');
+ 
+setTimeout(() => console.log('2'), 0);
+ 
+setInterval(() => console.log('3'), 0);
+ 
+Promise.then(() => console.log('5'));
+ 
+console.log('6');
+ 
+console.log(a);
+var a = 10;
+console.log(a);
+
+console.log("A");
+ 
+setTimeout(() => console.log("B"), 0);
+ 
+Promise.resolve().then(() => console.log("C"));
+ 
+console.log("D");
+ 
+
 
 
 
